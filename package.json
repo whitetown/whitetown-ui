@@ -1,0 +1,37 @@
+{
+  "name": "whitetown-ui",
+  "version": "0.1.0",
+  "description": "React Native Component Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitetown/whitetown-ui.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "components"
+  ],
+  "dependencies": {
+    "react-native-keyboard-aware-scroll-view": "^0.6.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-vector-icons": "^5.0.0"
+  },
+  "author": "WhiteTown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whitetown/whitetown-ui/issues"
+  },
+  "rnpm": {
+    "assets": [
+      "Fonts"
+    ]
+  },
+  "homepage": "https://github.com/whitetown/whitetown-ui#readme"
+}
