@@ -42,10 +42,8 @@ import {
     Textarea,
 
     TabControl,
-    Tabs,
     Tab,
     TabHeader,
-    Tabbar,
 
     Footer,
     FooterTab,
@@ -101,10 +99,8 @@ const InputX = wtConnect(Input)
 const TextareaX = wtConnect(Textarea)
 
 const TabControlX = wtConnect(TabControl)
-const TabsX = wtConnect(Tabs)
 const TabX = wtConnect(Tab)
 const TabHeaderX = wtConnect(TabHeader)
-const TabbarX = wtConnect(Tabbar)
 
 const FooterX = wtConnect(Footer)
 const FooterTabX = wtConnect(FooterTab)
@@ -144,10 +140,8 @@ export {
     TextareaX as Textarea,
 
     TabControlX as TabControl,
-    TabsX as Tabs,
     TabX as Tab,
     TabHeaderX as TabHeader,
-    TabbarX as Tabbar,
 
     FooterX as Footer,
     FooterTabX as FooterTab,

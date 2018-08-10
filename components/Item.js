@@ -10,6 +10,10 @@ import {
     View,
 } from 'react-native'
 
+import Label from './Label'
+import Input from './Input'
+import Textarea from './Textarea'
+
 import propsToStyle from '../utils/propsToStyle'
 import getTheme from '../utils/getTheme'
 
@@ -57,12 +61,15 @@ class Item extends React.Component {
         let inputContainsValue = false
 
         React.Children.map(this.props.children, (child, i) => {
-            const displayName = child.type.displayName
-            if (displayName === 'Input' ||
-                displayName === 'Textarea') {
-                inputContainsValue = (child.props.value && child.props.value.length)
+//            const displayName = child.type.displayName
+            const type = child.type.WrappedComponent||child.type
+
+//            if (displayName === 'Input' || displayName === 'Textarea') {
+            if (type === Input || type === Textarea) {
+                    inputContainsValue = (child.props.value && child.props.value.length)
             }
-            if (displayName === 'Textarea') {
+//            if (displayName === 'Textarea') {
+            if (type === Textarea) {
                 iStyle = { ...iStyle, height:null }
             }
         })
@@ -73,9 +80,11 @@ class Item extends React.Component {
 
         let styledChildren = React.Children.map(this.props.children, (child, i) => {
 
-            const displayName = child.type.displayName
+//            const displayName = child.type.displayName
+            const type = child.type.WrappedComponent||child.type
 
-            if (displayName === 'Input') {
+//            if (displayName === 'Input') {
+            if (type === Input) {
 
                 let tStyle = {
                     ...propsToStyle( 'Input', theme, child.props ),
@@ -91,7 +100,8 @@ class Item extends React.Component {
                     style:tStyle
                 })
 
-            } else if (displayName === 'Textarea') {
+//            } else if (displayName === 'Textarea') {
+            } else if (type === Textarea) {
 
                 let tStyle = {
                     ...propsToStyle( 'Textarea', theme, child.props ),
@@ -109,7 +119,8 @@ class Item extends React.Component {
                 })
 
 
-            } else if (displayName === 'Label') {
+//            } else if (displayName === 'Label') {
+            } else if (type === Label) {
 
                 let lStyle = {
                     ...propsToStyle( 'Label', theme, child.props ),
