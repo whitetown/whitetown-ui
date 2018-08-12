@@ -10,16 +10,16 @@ import {
     Platform,
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
 import Button from './Button'
 
-class FooterTab extends React.Component {
+class FooterTab extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let fStyle = {
             ...propsToStyle( 'FooterTab', theme, this.props ),

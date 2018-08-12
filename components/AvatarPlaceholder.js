@@ -9,14 +9,14 @@ import React from 'react'
 
 import { View, Text } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-export default class AvatarPlaceholder extends React.Component {
+export default class AvatarPlaceholder extends WhiteTownComponent {
 
     render() {
 
-        let theme = this.props.theme||getTheme()
+        let theme = this.getCurrentTheme()
 
         let colorBG = propsToStyle( 'color.bg', theme, this.props )
         let size    = propsToStyle( 'Avatar',   theme, this.props )

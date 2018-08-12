@@ -10,14 +10,14 @@ import {
     Text as TextRN
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Text extends React.Component {
+class Text extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let tStyle = {
             ...propsToStyle( 'Text',     theme, this.props ),

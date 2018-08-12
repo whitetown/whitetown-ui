@@ -10,10 +10,10 @@ import {
     FlatList
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class List extends React.Component {
+class List extends WhiteTownComponent {
 
     getWrappedInstance() {
         return this
@@ -21,7 +21,7 @@ class List extends React.Component {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let lStyle = {
             ...propsToStyle( 'List', theme, this.props ),

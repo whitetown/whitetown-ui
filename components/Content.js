@@ -9,10 +9,10 @@ import React from 'react'
 
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Content extends React.Component {
+class Content extends WhiteTownComponent {
 
     getWrappedInstance() {
         return this
@@ -20,7 +20,7 @@ class Content extends React.Component {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let cStyle = {
             ...propsToStyle( 'Content', theme, this.props ),

@@ -14,10 +14,10 @@ import Label from './Label'
 import Input from './Input'
 import Textarea from './Textarea'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Item extends React.Component {
+class Item extends WhiteTownComponent {
 
     constructor() {
         super()
@@ -44,7 +44,7 @@ class Item extends React.Component {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let iStyle = {
             ...propsToStyle( 'Item', theme, this.props ),

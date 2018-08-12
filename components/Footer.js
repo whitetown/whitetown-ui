@@ -12,14 +12,15 @@ import {
     Dimensions,
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Footer extends React.Component {
+class Footer extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
+
         const { height, width } = Dimensions.get('window')
         const footerHeight = (width > height) ? theme.systemValues.footerHeightLandscape : theme.systemValues.footerHeightPortrait
 

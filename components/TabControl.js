@@ -17,8 +17,8 @@ import Button from './Button'
 import Icon from './Icon'
 import Tab from './Tab'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
 const xOffset = new Animated.Value(0);
 
@@ -29,7 +29,7 @@ const onScroll = Animated.event(
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 
-export default class TabControl extends React.Component {
+export default class TabControl extends WhiteTownComponent {
 
     constructor(props) {
         super(props);
@@ -159,7 +159,7 @@ export default class TabControl extends React.Component {
             outputRange: [0, w],
         })
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         const tabbarStyle = {
                 ...propsToStyle( 'Tabbar', theme, this.props ),

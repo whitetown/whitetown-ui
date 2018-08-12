@@ -8,12 +8,12 @@
 import React from 'react'
 import { Image } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
 import AvatarPlaceholder from './AvatarPlaceholder'
 
-class Avatar extends React.Component {
+class Avatar extends WhiteTownComponent {
 
     constructor(props) {
         super()
@@ -35,7 +35,7 @@ class Avatar extends React.Component {
                 <AvatarPlaceholder {...this.props } />
             )
 
-        let theme = this.props.theme||getTheme()
+        let theme = this.getCurrentTheme()
 
         let aStyle  = {
             ...propsToStyle( 'Avatar',   theme, this.props ),

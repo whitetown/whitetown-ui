@@ -9,14 +9,14 @@ import React from "react"
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Icon extends React.Component {
+class Icon extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let iStyle = {
             ...propsToStyle( 'Icon',     theme, this.props ),

@@ -11,6 +11,9 @@ import {
     defaultValues,
     systemValues,
 
+    WhiteTownComponent,
+    ThemeProvider,
+
     Container,
     Content,
 
@@ -108,6 +111,9 @@ const FooterTabX = wtConnect(FooterTab)
 export {
     defaultValues,
     systemValues,
+
+    WhiteTownComponent,
+    ThemeProvider,
 
     ContainerX as Container,
     ContentX as Content,

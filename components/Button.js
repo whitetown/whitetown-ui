@@ -10,17 +10,17 @@ import {
     TouchableOpacity,
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
+import propsToStyle from '../utils/propsToStyle'
+
 import Icon from './Icon'
 import Text from './Text'
 
-import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
-
-class Button extends React.Component {
+class Button extends WhiteTownComponent {
 
     render() {
 
-    const theme = this.props.theme||getTheme()
+    const theme = this.getCurrentTheme()
 
     let btnColor = {}
     if (this.props.bordered)

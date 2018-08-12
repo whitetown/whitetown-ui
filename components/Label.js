@@ -10,14 +10,14 @@ import {
     Text
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Label extends React.Component {
+class Label extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let lStyle = {
             ...propsToStyle( 'Label', theme, this.props ),

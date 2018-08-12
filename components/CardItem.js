@@ -11,14 +11,14 @@ import {
     TouchableOpacity,
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class CardItem extends React.Component {
+class CardItem extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let cStyle = { ...propsToStyle( "CardItem", theme, this.props ), ...this.props.style }
 

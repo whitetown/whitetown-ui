@@ -10,10 +10,10 @@ import {
     TextInput
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Input extends React.Component {
+class Input extends WhiteTownComponent {
 
     getWrappedInstance() {
         return this
@@ -21,7 +21,7 @@ class Input extends React.Component {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let iStyle = {
             ...propsToStyle( 'Input', theme, this.props ),

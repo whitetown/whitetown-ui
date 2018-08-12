@@ -10,14 +10,14 @@ import {
     View,
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Space extends React.Component {
+class Space extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let sStyle = {
             ...propsToStyle( 'Space', theme, this.props ),

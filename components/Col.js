@@ -10,14 +10,14 @@ import {
     View,
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class Col extends React.Component {
+class Col extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let cStyle = {
             ...propsToStyle( 'Col', theme, this.props ),

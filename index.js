@@ -8,6 +8,9 @@
 import defaultValues    from './themes/defaultValues'
 import systemValues     from './utils/getSytemValues'
 
+import WhiteTownComponent from './components/WhiteTownComponent'
+import ThemeProvider    from './components/ThemeProvider'
+
 import Container        from './components/Container'
 import Content          from './components/Content'
 
@@ -50,6 +53,9 @@ import getTheme         from './utils/getTheme'
 export {
     defaultValues,
     systemValues,
+
+    WhiteTownComponent,
+    ThemeProvider,
 
     Container,
     Content,

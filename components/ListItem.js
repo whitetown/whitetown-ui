@@ -11,14 +11,14 @@ import {
     TouchableHighlight,
 } from 'react-native'
 
+import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
-import getTheme from '../utils/getTheme'
 
-class ListItem extends React.Component {
+class ListItem extends WhiteTownComponent {
 
     render() {
 
-        const theme = this.props.theme||getTheme()
+        const theme = this.getCurrentTheme()
 
         let lStyle = {
             ...propsToStyle( "ListItem", theme, this.props ),
