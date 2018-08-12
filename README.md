@@ -3,9 +3,9 @@
 This is a JS-only components library for React Native.
 
 <p align="center">
-<img src="https://github.com/whitetown/whitetown-ui/screenshots/ios-ui.gif" alt="ios demo">
+<img src="https://github.com/whitetown/whitetown-ui-demo/blob/master/screenshots/ios-ui.gif" alt="ios demo">
 <br/>
-<img src="https://github.com/whitetown/whitetown-ui/screenshots/android-ui.gif" alt="android demo">
+<img src="https://github.com/whitetown/whitetown-ui-demo/blob/master/screenshots/android-ui.gif" alt="android demo">
 </p>
 
 
