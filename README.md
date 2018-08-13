@@ -116,7 +116,7 @@ return (
                         <Text light>light</Text>
                         <Text note>note (not only color but size as well)</Text>
                         <Space xs />
-                        <Text>Becides there are a few common colors, such as 'headerColor', 'appBackground', 'alternate', etc.. which are used indirectly</Text>
+                        <Text>Besides there are a few common colors, such as 'headerColor', 'appBackground', 'alternate', etc.. which are used indirectly</Text>
                 </CardItem>
             </Card>
 

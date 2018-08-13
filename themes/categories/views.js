@@ -80,7 +80,7 @@ export default function viewsCategory( defaultValues ) {
     },
 
     'Col': {
-        default: { flexDirection:'column' },
+        default: { flexDirection:'column', flex:1 },
 
         middle:  { justifyContent:'center' },
 

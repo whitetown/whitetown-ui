@@ -18,6 +18,7 @@ import Text             from './components/Text'
 import Button           from './components/Button'
 import Icon             from './components/Icon'
 import Spinner          from './components/Spinner'
+import Segments         from './components/Segments'
 
 import List             from './components/List'
 import ListItem         from './components/ListItem'
@@ -64,6 +65,7 @@ export {
     Icon,
     Button,
     Spinner,
+    Segments,
 
     List,
     ListItem,

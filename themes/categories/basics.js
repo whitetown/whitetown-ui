@@ -62,8 +62,8 @@ export default function basicCategory( defaultValues ) {
 
         xs:        { height: sizesXS.buttonHeight },
         sm:        { height: sizesSM.buttonHeight },
-        md:        { height: sizesMD.buttonHeight, },
-        lg:        { height: sizesLG.buttonHeight, },
+        md:        { height: sizesMD.buttonHeight },
+        lg:        { height: sizesLG.buttonHeight },
 
         disabled:  { opacity: 0.7 },
 
@@ -81,8 +81,8 @@ export default function basicCategory( defaultValues ) {
 
         xs:        { fontSize: sizesXS.buttonTextSize },
         sm:        { fontSize: sizesSM.buttonTextSize },
-        md:        { fontSize: sizesMD.buttonTextSize, },
-        lg:        { fontSize: sizesLG.buttonTextSize, },
+        md:        { fontSize: sizesMD.buttonTextSize },
+        lg:        { fontSize: sizesLG.buttonTextSize },
     },
 
     'Button.Icon': {
@@ -90,8 +90,18 @@ export default function basicCategory( defaultValues ) {
 
         xs:        { fontSize: sizesXS.buttonIconSize  },
         sm:        { fontSize: sizesSM.buttonIconSize  },
-        md:        { fontSize: sizesMD.buttonIconSize, },
-        lg:        { fontSize: sizesLG.buttonIconSize, }
+        md:        { fontSize: sizesMD.buttonIconSize  },
+        lg:        { fontSize: sizesLG.buttonIconSize  }
+    },
+
+    'Segments': {
+        default:   { overflow: 'hidden', flexDirection:'row', height: sizesSM.buttonHeight-8, borderRadius:sizesSM.buttonRadius },
+
+        xs:        { height: sizesXS.buttonHeight-8 },
+        sm:        { height: sizesSM.buttonHeight-8 },
+        md:        { height: sizesMD.buttonHeight-8 },
+        lg:        { height: sizesLG.buttonHeight-8 },
+
     },
 
     }

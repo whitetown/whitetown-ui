@@ -21,6 +21,7 @@ import {
     Icon,
     Button,
     Spinner,
+    Segments,
 
     List,
     ListItem,
@@ -78,6 +79,7 @@ const TextX = wtConnect(Text)
 const IconX = wtConnect(Icon)
 const ButtonX = wtConnect(Button)
 const SpinnerX = wtConnect(Spinner)
+const SegmentsX = wtConnect(Segments)
 
 const ListX = wtConnect(List)
 const ListItemX = wtConnect(ListItem)
@@ -122,6 +124,7 @@ export {
     IconX as Icon,
     ButtonX as Button,
     SpinnerX as Spinner,
+    SegmentsX as Segments,
 
     ListX as List,
     ListItemX as ListItem,
