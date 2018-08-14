@@ -20,19 +20,20 @@ import Tab from './Tab'
 import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'
 
-const xOffset = new Animated.Value(0);
-
-const onScroll = Animated.event(
-    [{ nativeEvent: { contentOffset: { x: xOffset } } }],
-    { useNativeDriver: true }
-)
-
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 
 export default class TabControl extends WhiteTownComponent {
 
     constructor(props) {
         super(props);
+
+        this.xOffset = new Animated.Value(0);
+
+        this.onScroll = Animated.event(
+            [{ nativeEvent: { contentOffset: { x: this.xOffset } } }],
+            { useNativeDriver: true }
+        )
+
         this.state = {
             fakeItems: [],
             tabs: [],
@@ -154,7 +155,7 @@ export default class TabControl extends WhiteTownComponent {
 
         let w =  this.state.headers.length ? this.state.width / this.state.headers.length : 0
 
-        const x = xOffset.interpolate({
+        const x = this.xOffset.interpolate({
             inputRange:  [0, this.state.width],
             outputRange: [0, w],
         })
@@ -204,7 +205,7 @@ export default class TabControl extends WhiteTownComponent {
                         keyExtractor={item => item.toString()}
                         ItemSeparatorComponent={null}
                         onLayout={(e) => this.onLayout(e)}
-                        onScroll={onScroll}
+                        onScroll={this.onScroll}
                         onMomentumScrollEnd={(e)=>this.onScrollEnd(e)}
                     />
                 </View>
