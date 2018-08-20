@@ -46,6 +46,8 @@ import TabControl       from './components/TabControl'
 import Tab              from './components/Tab'
 import TabHeader        from './components/TabHeader'
 
+import Header           from './components/Header'
+
 import Footer           from './components/Footer'
 import FooterTab        from './components/FooterTab'
 
@@ -92,6 +94,8 @@ export {
     TabControl,
     Tab,
     TabHeader,
+
+    Header,
 
     Footer,
     FooterTab,

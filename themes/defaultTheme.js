@@ -15,6 +15,7 @@ import AvatarCategory from './categories/avatar'
 import ListCategory from './categories/lists'
 import TabsCategory from './categories/tabs'
 import FormsCategory from './categories/forms'
+import HeaderCategory from './categories/header'
 
 const defaultTheme = {
 
@@ -30,6 +31,7 @@ const defaultTheme = {
     ...ListCategory(defaultValues),
     ...FormsCategory(defaultValues),
     ...TabsCategory(defaultValues),
+    ...HeaderCategory(defaultValues),
 
 }
 

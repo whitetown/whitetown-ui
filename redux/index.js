@@ -49,6 +49,8 @@ import {
     Tab,
     TabHeader,
 
+    Header,
+
     Footer,
     FooterTab,
 
@@ -107,6 +109,8 @@ const TabControlX = wtConnect(TabControl)
 const TabX = wtConnect(Tab)
 const TabHeaderX = wtConnect(TabHeader)
 
+const HeaderX = wtConnect(Header)
+
 const FooterX = wtConnect(Footer)
 const FooterTabX = wtConnect(FooterTab)
 
@@ -151,6 +155,8 @@ export {
     TabControlX as TabControl,
     TabX as Tab,
     TabHeaderX as TabHeader,
+
+    HeaderX as Header,
 
     FooterX as Footer,
     FooterTabX as FooterTab,

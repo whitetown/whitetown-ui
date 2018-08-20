@@ -16,6 +16,7 @@ import AvatarCategory from '../themes/categories/avatar'
 import ListCategory from '../themes/categories/lists'
 import TabsCategory from '../themes/categories/tabs'
 import FormsCategory from '../themes/categories/forms'
+import HeaderCategory from '../themes/categories/header'
 
 export default function getTheme(name = null, c = null, v = null ) {
 
@@ -38,6 +39,7 @@ export default function getTheme(name = null, c = null, v = null ) {
         ...ListCategory(values),
         ...FormsCategory(values),
         ...TabsCategory(values),
+        ...HeaderCategory(values),
 
     }
 
