@@ -68,7 +68,7 @@ export default function tabsCategory( defaultValues ) {
     },
 
     'FooterTab': {
-        default: { paddingLeft:0, paddingRight:0 },
+        default: { paddingLeft:0, paddingRight:0, flex:1 },
         // this is a <Button full noheight vertical={ isPhone ? true : false } />
     },
 

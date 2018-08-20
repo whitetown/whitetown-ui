@@ -67,8 +67,8 @@ export default function basicCategory( defaultValues ) {
 
         disabled:  { opacity: 0.7 },
 
-        block:     { borderRadius: sizesSM.buttonRadius, flex:1 },
-        full:      { borderRadius: 0, flex:1  },
+        block:     { borderRadius: sizesSM.buttonRadius, alignSelf:'stretch', },
+        full:      { borderRadius: 0, alignSelf:'stretch',  },
         rounded:   { },
         noheight:  { height:null },
         bordered:  { borderWidth:1 },

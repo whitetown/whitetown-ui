@@ -59,9 +59,10 @@ class Segments extends WhiteTownComponent {
                 {
                     this.props.items.map( (item, index) => {
 
-                        let bStyle = { marginLeft: index ? 1 : 0 }
-                        if (this.props.ratio)
-                            bStyle['flex'] = this.props.ratio[index]
+                        let bStyle = {
+                            flex: this.props.ratio ? this.props.ratio[index] : 1,
+                            marginLeft: index ? 1 : 0
+                            }
 
                         return (
                             <Button key={index}
