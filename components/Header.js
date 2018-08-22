@@ -163,7 +163,7 @@ class Header extends WhiteTownComponent {
                         this.props.statusBar !== undefined ? this.props.statusBar :
                         (
                             <View style={{ height: this.state.statusBarHeight, backgroundColor:this.props.statusBarColor||this.props.navbarColor||colors.headerColor }}>
-                                <StatusBar barStyle={this.props.statusBarStyle||"dark-content"} />
+                                <StatusBar barStyle={this.props.statusBarStyle||"dark-content"} backgroundColor={this.props.statusBarColor||this.props.navbarColor||colors.headerColor} />
                             </View>
                         )
                     }
