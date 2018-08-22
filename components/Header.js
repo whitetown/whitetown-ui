@@ -79,12 +79,19 @@ class Header extends WhiteTownComponent {
         const orientation = width > height ? orientations.landscape : orientations.portrait
         const navbarHeight = os[orientation]
 
-        StatusBarManager.getHeight((result)=>{
+        if (Platform.OS === 'ios') {
+            StatusBarManager.getHeight((result)=>{
+                this.setState({
+                    statusBarHeight: result ? result['height']||0 : 0,
+                    navbarHeight: navbarHeight,
+                })
+            })
+        } else {
             this.setState({
-                statusBarHeight: result ? result['height']||0 : 0,
+                statusBarHeight: 0,
                 navbarHeight: navbarHeight,
             })
-        })
+        }
     }
 
     async componentWillMount() {
