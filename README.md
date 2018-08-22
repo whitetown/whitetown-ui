@@ -15,12 +15,14 @@ This is a JS-only components library for React Native.
 * Icon
 * Button
 * Spinner
+* Segments
 * Avatar, AvatarPlaceholder
 * List, ListItem
 * Left, Body, Right, Row, Col
 * Space
 * Card, CardItem
 * Form, Item, Label, Input, Textarea
+* Header
 * TabControl, Tab, TabHeader
 * Footer, FooterTab
 
