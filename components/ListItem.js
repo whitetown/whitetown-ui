@@ -8,7 +8,7 @@
 import React from 'react'
 import {
     View,
-    TouchableHighlight,
+    TouchableOpacity,
 } from 'react-native'
 
 import WhiteTownComponent from './WhiteTownComponent'
@@ -28,7 +28,8 @@ class ListItem extends WhiteTownComponent {
         let innerStyle = propsToStyle( "ListItem.inner", theme, this.props )
 
         return (
-            <TouchableHighlight onPress={this.props.onPress}
+            <TouchableOpacity onPress={this.props.onPress}
+                                activeOpacity={0.9}
                                 onLongPress={this.props.onLongPress}
                                 underlayColor={this.props.underlayColor||theme.defaultValues.colors.light}
                                 {...this.props}
@@ -37,7 +38,7 @@ class ListItem extends WhiteTownComponent {
                 <View {...this.props} style={lStyle} >
                     {this.props.children}
                 </View>
-            </TouchableHighlight>
+            </TouchableOpacity>
         )
     }
 }

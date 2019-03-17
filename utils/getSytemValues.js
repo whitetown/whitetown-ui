@@ -10,15 +10,17 @@
     Dimensions,
 } from "react-native"
 
+import { isIphoneX } from 'react-native-iphone-x-helper'
 
 const isAndroid = Platform.OS === 'android'
 const isIOS     = Platform.OS === 'ios'
 
 const { height, width } = Dimensions.get('window')
 
-const isPhoneX  = (width === 375 && height === 812) || (width === 812 && height === 375)
+const isPhoneX   = isIphoneX()
 
 const statusBarHeight     = isPhoneX ? 44 : 20
+const navigationBarHeight = Platform.OS === 'ios' ? 44 : 56;
 
 const footerHeightPortrait  = 49
 const footerHeightLandscape = 39
@@ -33,6 +35,8 @@ const systemValues = {
     screenWidth:  width,
 
     statusBarHeight,
+    navigationBarHeight,
+
     footerHeightPortrait,
     footerHeightLandscape,
 }

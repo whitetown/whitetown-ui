@@ -33,9 +33,16 @@ export default {
     facebook:  '#3B5998',
     google:    '#dd4b39',
 
+    headerOpacity:  1.0,
     headerColor:    '#252525',
+    headerTitle:    '#DDDDDD',
+    headerTintColor: '#FF7700',
+
     appBackground:  '#000000',
+    appSections:    '#252525',
     alternate:      '#151515',
+
+    footerColor:    '#252525',
 
     textColor:      '#FFFFFF',
     btnTextColor:   '#FFFFFF',

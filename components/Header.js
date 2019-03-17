@@ -11,11 +11,12 @@ import {
     View,
     StatusBar,
     NativeModules,
-    SafeAreaView,
     Platform,
     Dimensions,
     TouchableOpacity
 } from 'react-native'
+
+import SafeAreaView from 'react-native-safe-area-view'
 
 import WhiteTownComponent from './WhiteTownComponent'
 import Text from './Text'

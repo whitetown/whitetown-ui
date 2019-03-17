@@ -58,6 +58,9 @@ import {
 
 } from '../index'
 
+import {
+    checkThemeChange
+} from './arc'
 
 function mapStateToProps(state) { return { theme: state.theme.theme } }
 
@@ -68,7 +71,7 @@ function wtConnect( c ) {
         null,
         null,
         {
-            withRef: true,
+            forwardRef: true,
             getDisplayName: ()=> c.displayName,
         }
     )(c)
@@ -162,4 +165,5 @@ export {
     FooterTabX as FooterTab,
 
     getTheme,
+    checkThemeChange,
 }

@@ -8,9 +8,10 @@
 import React from 'react'
 import {
     View,
-    SafeAreaView,
     Dimensions,
 } from 'react-native'
+
+import SafeAreaView from 'react-native-safe-area-view'
 
 import WhiteTownComponent from './WhiteTownComponent'
 import propsToStyle from '../utils/propsToStyle'

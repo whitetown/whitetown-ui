@@ -1,4 +1,15 @@
 
+## 0.4.0
+
++ new colors
++ use react-native-safe-area-view, react-native-iphone-x-helper instead of own functions
++ rename prop: withRef to forwardRef
++ add function checkThemeChange
++ theme now has props 'navigationOptions' (for reactnavigation) and contentOffset ( > 0 if navigation bar is transparent )
+
+
+
+
 ## 0.3.0
 
 new component <Header />
