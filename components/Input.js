@@ -15,6 +15,11 @@ import propsToStyle from '../utils/propsToStyle'
 
 class Input extends WhiteTownComponent {
 
+    constructor() {
+        super()
+        this.input = React.createRef()
+    }
+
     getWrappedInstance() {
         return this
     }
@@ -31,7 +36,8 @@ class Input extends WhiteTownComponent {
 
         return (
 			<TextInput
-				ref={c => { this._root = c }}
+                ref={this.input}
+				//ref={c => { this._root = c }}
 				editable={this.props.disabled ? false : true}
 				underlineColorAndroid='rgba(0,0,0,0)'
 				placeholderTextColor={

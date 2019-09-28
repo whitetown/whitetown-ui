@@ -15,6 +15,7 @@ import propsToStyle from '../utils/propsToStyle'
 
 import Icon from './Icon'
 import Text from './Text'
+import Spinner from './Spinner'
 
 class Button extends WhiteTownComponent {
 
@@ -73,6 +74,12 @@ class Button extends WhiteTownComponent {
             else
                 textColor = propsToStyle( 'color.fg.button', theme, this.props )
 
+            if (this.props.submit) {
+                return (
+                    <Spinner sm style={{ flex:1, ...textColor }} />
+                )
+            }
+
             let tStyle = {
                 ...propsToStyle( 'Button.Text', theme, this.props ),
                 ...textColor,
@@ -93,9 +100,11 @@ class Button extends WhiteTownComponent {
 
     })
 
+    const props = this.props.submit ? { ...this.props, onPress:null, submit:false } : this.props
+
     return (
         <TouchableOpacity activeOpacity={ this.props.activeOpacity > 0 ? this.props.activeOpacity : 0.7 }
-                {...this.props}
+                {...props}
                 style={bStyle} >
             {styledChildren}
         </TouchableOpacity>
