@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "react-native-keyboard-aware-scroll-view": "*",
-    "react-native-safe-area-view": "*",
+    "react-native-safe-area-view": "^0.14.1",
     "react-native-iphone-x-helper": "*"
   },
   "peerDependencies": {
@@ -30,11 +30,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/whitetown/whitetown-ui/issues"
-  },
-  "rnpm": {
-    "assets": [
-      "Fonts"
-    ]
   },
   "homepage": "https://github.com/whitetown/whitetown-ui#readme"
 }

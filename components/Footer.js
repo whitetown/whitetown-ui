@@ -9,6 +9,7 @@ import React from 'react'
 import {
     View,
     Dimensions,
+//    SafeAreaView,
 } from 'react-native'
 
 import SafeAreaView from 'react-native-safe-area-view'

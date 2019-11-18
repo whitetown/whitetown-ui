@@ -46,6 +46,7 @@ function getNavigationOptions( theme ) {
             color: colors.headerTitle,
         },
         headerTransparent: colors.headerOpacity < 1,
+        headerBackTitle: null,
         }
 
 }
